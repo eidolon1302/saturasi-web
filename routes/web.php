@@ -32,6 +32,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/analytics', [DashboardController::class, 'analytics'])->name('analytics');
     Route::get('/dashboard/fintech', [DashboardController::class, 'fintech'])->name('fintech');
+    Route::get('/dashboard/announcement', [DashboardController::class, 'announcement'])->name('announcement');
     Route::get('/ecommerce/customers', [CustomerController::class, 'index'])->name('customers');
     Route::get('/ecommerce/orders', [OrderController::class, 'index'])->name('orders');
     Route::get('/ecommerce/invoices', [InvoiceController::class, 'index'])->name('invoices');
@@ -101,6 +102,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/inbox', function () {
         return view('pages/inbox');
     })->name('inbox'); 
+
     Route::get('/calendar', function () {
         return view('pages/calendar');
     })->name('calendar'); 
