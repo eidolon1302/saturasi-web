@@ -33,4 +33,14 @@ class DashboardController extends Controller
     {
         return view('pages/dashboard/fintech');
     }
+
+    /**
+     * Displays the announcement screen
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function announcement()
+    {
+        return view('livewire.pages.dashboard.announcement');
+    }
 }
