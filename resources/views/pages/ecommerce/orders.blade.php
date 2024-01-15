@@ -36,6 +36,7 @@
         <!-- Table -->
         <x-ecommerce.orders-table :orders="$orders" :count="$orders_count" />
         
+        
         <!-- Pagination -->
         <div class="mt-8">
             {{$orders->links()}}
