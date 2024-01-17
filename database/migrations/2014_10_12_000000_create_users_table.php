@@ -67,6 +67,9 @@ return new class extends Migration
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();
             $table->string('tiktok')->nullable();
+            $table->string('phone_type')->nullable();
+            $table->string('phone_os')->nullable();
+            $table->boolean('is_active')->default(true);
             $table->integer('referal_id')->nullable();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
@@ -74,6 +77,9 @@ return new class extends Migration
             $table->integer('updated_by')->nullable();
             $table->timestamps();
             $table->softDeletes('deleted_at');
+            $table->float('latitude', 17, 14)->nullable();
+            $table->float('longitude', 17, 14)->nullable();
+            $table->string('location')->nullable();
         });
     }
 

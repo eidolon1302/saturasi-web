@@ -15,6 +15,7 @@ return new class extends Migration
             $table->bigInteger('id')->primary();
             $table->foreignId('district_id')->constrained('reg_districts')->cascadeOnDelete();
             $table->string('name');
+            $table->integer('tps')->nullable();
         });
     }
 

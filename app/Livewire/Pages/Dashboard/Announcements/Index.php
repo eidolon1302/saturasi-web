@@ -4,7 +4,9 @@ namespace App\Livewire\Pages\Dashboard;
 
 use Livewire\Component;
 use Illuminate\Http\RedirectResponse;
+use Livewire\Attributes\Title;
 
+#[Title('Announcement')]
 class Announcement extends Component
 {
     public $title;

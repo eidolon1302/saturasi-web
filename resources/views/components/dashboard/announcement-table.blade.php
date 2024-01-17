@@ -19,6 +19,9 @@
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                             <div class="font-semibold">Tanggal</div>
                         </th>
+                        <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                            <div class="font-semibold">Action</div>
+                        </th>
                         
                     </tr>
                 </thead>
