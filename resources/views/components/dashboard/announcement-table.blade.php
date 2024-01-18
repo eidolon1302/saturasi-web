@@ -27,17 +27,17 @@
                 </thead>
                 <!-- Table body -->
                     <tbody class="text-sm" x-data="{ open: false }">
-                        @forelse ($announcements as $announcement)
+                        @forelse ($data as $key => $item)
                         <!-- Row -->
                         <tr>
                             <td class=" last:pr-5 py-3 whitespace-nowrap ">
-                                <div class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">{{ $announcement->title }}</div>
+                                <div class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">{{ $item->title }}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="font-medium text-slate-800 dark:text-slate-100">{!! $announcement->content !!}</div>
+                                <div class="font-medium text-slate-800 dark:text-slate-100">{!! $item->message !!}</div>
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                <div class="text-center font-medium text-emerald-500">{{ $announcement->created_at->format('d F Y') }}</div>
+                                <div class="text-center font-medium text-emerald-500">{{ strftime("%d %B %Y", strtotime($item->created_at)) }}</div>
                             </td>
                             <td class="text-center">
                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('announcements.destroy', $announcement->id) }}" method="POST">
@@ -56,7 +56,6 @@
                         @endforelse
                     </tbody>
             </table>
-
         </div>
     </div>
 </div>

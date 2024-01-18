@@ -4,14 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DataFeedController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CustomerController;
-use App\Http\Controllers\OrderController;
-use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\MemberController;
-use App\Http\Controllers\TransactionController;
-use App\Http\Controllers\JobController;
-use App\Http\Controllers\CampaignController;
 use App\Http\Controllers\AnnouncementController;
 use App\Livewire\Pages\Announcement;
+use App\Livewire\Pages\Dashboard\Announcements\Index;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,7 +27,11 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     // Route for the getting the data feed
     Route::get('/json-data-feed',                   [DataFeedController::class, 'getDataFeed'])->name('json_data_feed');
     Route::get('/dashboard',                        [DashboardController::class, 'index'])->name('dashboard');
-    Route::resource('/dashboard/announcements',     AnnouncementController::class)->names('announcements'); 
+    // Route::resource('/dashboard/announcements',     AnnouncementController::class)->names('announcements');
+
+    Route::get('/dashboard/announcements',                      Index::class)->name('announcements.index'); 
+    Route::get('/dashboard/announcements/show', \App\Livewire\Pages\Dashboard\announcements\Show::class)->name('announcements.show'); 
+    Route::get('/dashboard/announcements/edit', \App\Livewire\Pages\Dashboard\Announcements\Edit::class)->name('announcements.edit');  
 
     Route::get('/community/users-tabs',             [MemberController::class, 'indexTabs'])->name('users-tabs');
     Route::get('/community/users-tiles',            [MemberController::class, 'indexTiles'])->name('users-tiles');
