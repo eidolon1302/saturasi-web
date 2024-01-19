@@ -10,8 +10,8 @@
 
         <!-- Left: Title -->
         <div class="mb-4 sm:mb-0">
-            <h1 class="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold">Pengumuman</h1>
-            <h3 class="text-slate-800 dark:text-slate-100 "   >List pesan pengumuman</h3>
+            <h1 class="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold">Partai</h1>
+            <h3 class="text-slate-800 dark:text-slate-100 "   >List partai politik</h3>
         </div>
 
         <!-- Right: Actions -->
@@ -36,7 +36,7 @@
                 <svg class="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">
                     <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z"/>
                 </svg>
-                <a @click.prevent="broadcastModalOpen = true">Tambah Pengumuman</span>
+                <a @click.prevent="broadcastModalOpen = true">Tambah Partai</span>
                 </a>
             </button>
             <div>
@@ -135,18 +135,11 @@
                 
             </div>
 
-            {{-- <button class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
-                <svg class="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">
-                    <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z"/>
-                </svg>
-                <a href="{{ route('announcements.create') }}">Tambah Pengumuman</a>
-            </button> --}}
-
         </div>
 
     </div>
         <!-- table -->
-        <x-dashboard.announcement-table :announcements=$announcements/>
+        {{-- <x-dashboard.announcement-table :announcements=$announcements/> --}}
         <!-- pagination -->
         <div class="mt-8 flex justify-between">
             <select wire:model.live="pagination" class="form-select">
@@ -156,7 +149,7 @@
                 <option value="50">50</option>
                 <option value="100">100</option>
             </select>
-            <div class="w-full ml-2">{{ $announcements->links() }}</div>
+            {{-- <div class="w-full ml-2">{{ $announcements->links() }}</div> --}}
         </div>
     </div>
 

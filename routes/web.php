@@ -6,9 +6,10 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\AnnouncementController;
-use App\Livewire\Pages\Announcement;
+use App\Livewire\Pages\Parpol;
 use App\Livewire\Pages\Dashboard\Announcements\Index;
-
+use App\Livewire\Pages\Dashboard\Announcements\Show;
+use App\Livewire\Pages\Dashboard\Announcements\Edit;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -65,7 +66,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     })->name('calendar'); 
 
 
-    Route::get('/announcement',           Announcement::class)->name( name : 'pages.announcement');
+    Route::get('/partai',           Parpol::class)->name( name : 'pages.parpol');
 
 
     Route::get('/settings/account', function () {
