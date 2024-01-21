@@ -123,7 +123,7 @@
                                         <!-- END: Delete User -->
                                     </div>
                                 </div>
-                            </div>
+                            </td>
 
                             {{-- <td class="text-center">
                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('announcements.destroy', $announcement->id) }}" method="POST">

@@ -50,10 +50,10 @@
             <x-dashboard.dashboard-card-05 />
 
             <!-- Doughnut chart (Top Countries) -->
-            <x-dashboard.dashboard-card-06 />
+            {{-- <x-dashboard.dashboard-card-06 /> --}}
 
             <!-- Table (Top Channels) -->
-            <x-dashboard.dashboard-card-07 />
+            <x-parpol-table />
 
             <!-- Line chart (Sales Over Time)  -->
             <x-dashboard.dashboard-card-08 />

@@ -66,7 +66,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     })->name('calendar'); 
 
 
-    Route::get('/partai',           Parpol::class)->name( name : 'pages.parpol');
+    Route::get('/partai',           Parpol::class)->name('pages.parpol');
 
 
     Route::get('/settings/account', function () {

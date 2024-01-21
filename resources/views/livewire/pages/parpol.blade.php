@@ -32,13 +32,13 @@
             </div>
             
             <!-- tambah pemngumuman -->
-            <button class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+            {{-- <button class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
                 <svg class="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">
                     <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z"/>
                 </svg>
                 <a @click.prevent="broadcastModalOpen = true">Tambah Partai</span>
                 </a>
-            </button>
+            </button> --}}
             <div>
                 <div>
                     <div
@@ -71,7 +71,8 @@
                     >
                         <div class="bg-white rounded shadow-lg overflow-auto max-w-lg w-full max-h-full" 
                             @click.outside="broadcastModalOpen = false" 
-                            @keydown.escape.window="broadcastModalOpen = false">
+                            @keydown.escape.window="broadcastModalOpen = false"
+                        >
         
                             <div class="px-5 py-3 border-b border-slate-200">
                                 <div class="flex justify-between items-center">
@@ -138,8 +139,9 @@
         </div>
 
     </div>
-        <!-- table -->
-        {{-- <x-dashboard.announcement-table :announcements=$announcements/> --}}
+        <!-- table parpol-->
+        <x-parpol-table :partais="$partais"/>
+
         <!-- pagination -->
         <div class="mt-8 flex justify-between">
             <select wire:model.live="pagination" class="form-select">
@@ -149,7 +151,7 @@
                 <option value="50">50</option>
                 <option value="100">100</option>
             </select>
-            {{-- <div class="w-full ml-2">{{ $announcements->links() }}</div> --}}
+            <div class="w-full ml-2">{{ $partais->links() }}</div>
         </div>
     </div>
 

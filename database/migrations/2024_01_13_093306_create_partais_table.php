@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('party', function (Blueprint $table) {
+        Schema::create('partais', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();            
+            $table->string('name');   
+            $table->unsignedTinyInteger('nomor')->unique;
+            $table->string('image', 2048);         
             $table->timestamps();
         });
     }
