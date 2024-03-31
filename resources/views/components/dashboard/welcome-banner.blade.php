@@ -1,51 +1,85 @@
-<div class="relative bg-indigo-200 dark:bg-indigo-500 p-4 sm:p-6 rounded-sm overflow-hidden mb-8">
-
-    <!-- Background illustration -->
-    <div class="absolute right-0 top-0 -mt-4 mr-16 pointer-events-none hidden xl:block" aria-hidden="true">
-        <svg width="319" height="198" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-                <path id="welcome-a" d="M64 0l64 128-64-20-64 20z" />
-                <path id="welcome-e" d="M40 0l40 80-40-12.5L0 80z" />
-                <path id="welcome-g" d="M40 0l40 80-40-12.5L0 80z" />
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="welcome-b">
-                    <stop stop-color="#A5B4FC" offset="0%" />
-                    <stop stop-color="#818CF8" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="24.537%" x2="50%" y2="100%" id="welcome-c">
-                    <stop stop-color="#4338CA" offset="0%" />
-                    <stop stop-color="#6366F1" stop-opacity="0" offset="100%" />
-                </linearGradient>
-            </defs>
-            <g fill="none" fill-rule="evenodd">
-                <g transform="rotate(64 36.592 105.604)">
-                    <mask id="welcome-d" fill="#fff">
-                        <use xlink:href="#welcome-a" />
-                    </mask>
-                    <use fill="url(#welcome-b)" xlink:href="#welcome-a" />
-                    <path fill="url(#welcome-c)" mask="url(#welcome-d)" d="M64-24h80v152H64z" />
-                </g>
-                <g transform="rotate(-51 91.324 -105.372)">
-                    <mask id="welcome-f" fill="#fff">
-                        <use xlink:href="#welcome-e" />
-                    </mask>
-                    <use fill="url(#welcome-b)" xlink:href="#welcome-e" />
-                    <path fill="url(#welcome-c)" mask="url(#welcome-f)" d="M40.333-15.147h50v95h-50z" />
-                </g>
-                <g transform="rotate(44 61.546 392.623)">
-                    <mask id="welcome-h" fill="#fff">
-                        <use xlink:href="#welcome-g" />
-                    </mask>
-                    <use fill="url(#welcome-b)" xlink:href="#welcome-g" />
-                    <path fill="url(#welcome-c)" mask="url(#welcome-h)" d="M40.333-15.147h50v95h-50z" />
-                </g>
-            </g>
-        </svg>
-    </div>
-
     <!-- Content -->
-    <div class="relative">
-        <h1 class="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-1">Good afternoon, {{ Auth::user()->name }} 👋</h1>
-        <p class="dark:text-indigo-200">Here is what's happening with your projects today:</p>
+    <div class="w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
+        <div class="relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center">
+          <div class="col-span-6">
+            <span class="uppercase text-white text-xs font-bold mb-2 block">WE ARE EXPERTS</span>
+            <h1 class="text-white font-extrabold text-5xl mb-8">Finpoint provides Financial Consulting in different ways</h1>
+            <p class="text-stone-100 text-base">
+                we affirm our commitment to creating a world where the environment thrives, biodiversity flourishes, and humanity lives in harmony with nature. Together, we will be the change needed to ensure a sustainable and resilient future for our planet.
+            </p>
+            <button class="mt-8 text-white uppercase py-4 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-10">Get started</button>
+          </div>
+        </div>
+    </div>
+    <div class="bg-[#f7d0b6] py-20">
+        <div class="max-w-screen-lg mx-auto flex justify-between items-center">
+          <div class="max-w-xl">
+            <h2 class="font-black text-sky-950 text-3xl mb-4">As the leading experts in this field, we're in over 90 countries</h2>
+            <p class="text-base text-sky-950">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <button class="text-sky-950 uppercase py-3 text-base px-10 border border-sky-950 hover:bg-sky-950 hover:bg-opacity-10">Get started</button>
+        </div>
+    </div>
+    <div class="py-12 relative overflow-hidden bg-white">
+        <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
+          <div class="w-full flex flex-col items-end pr-16">
+            <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10">Whether you need Assistance</h2>
+            <div class="h-full mt-auto overflow-hidden relative">
+              <img src="https://picsum.photos/800/600" class="h-full w-full object-contain" alt="">
+            </div>
+          </div>
+      
+          <div class="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0">
+            <div class="relative z-20 pl-12">
+              <h2 class="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">Finpoint is here <br>to help you</h2>
+              <p class="text-white text-sm">
+                Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
+              </p>
+              <button class="mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10">Talk with expert</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="py-4 relative overflow-hidden bg-white">
+        <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
+          
+      
+          <div class="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-[#f7d0b6] before:top-0 before:right-0">
+            <div class="relative z-20 pl-12">
+              <h2 class="text-sky-950 font-black text-5xl leading-snug mb-10">Finpoint is here <br>to help you</h2>
+              <p class="text-sky-950 text-sm">
+                Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
+              </p>
+              <button class="mt-8 text-sky-950 uppercase py-3 text-sm px-10 border border-sky-950 hover:bg-white hover:bg-opacity-10">Talk with expert</button>
+            </div>
+          </div>
+          <div class="w-full flex flex-col pl-16">
+            <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-left mb-12 mt-10">Whether you need Assistance</h2>
+            <div class="h-full mt-auto overflow-hidden relative">
+              <img src="https://picsum.photos/800/600" class="h-full w-full object-contain" alt="">
+            </div>
+          </div>
+      
+        </div>
     </div>
 
-</div>
+    <div class="py-12 relative overflow-hidden bg-white">
+        <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
+          <div class="w-full flex flex-col items-end pr-16">
+            <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10">Whether you need Assistance</h2>
+            <div class="h-full mt-auto overflow-hidden relative">
+              <img src="https://picsum.photos/800/600" class="h-full w-full object-contain" alt="">
+            </div>
+          </div>
+      
+          <div class="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0">
+            <div class="relative z-20 pl-12">
+              <h2 class="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">Finpoint is here <br>to help you</h2>
+              <p class="text-white text-sm">
+                Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
+              </p>
+              <button class="mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10">Talk with expert</button>
+            </div>
+          </div>
+        </div>
+    </div>

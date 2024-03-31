@@ -12,13 +12,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet" />
 
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-
         <!-- Styles -->
-        @livewireStyles        
+        @livewireStyles 
+        @stack('styles') 
 
-        <script>
+        <!-- Scripts -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])      
+
+        {{-- <script>
             if (localStorage.getItem('dark-mode') === 'false' || !('dark-mode' in localStorage)) {
                 document.querySelector('html').classList.remove('dark');
                 document.querySelector('html').style.colorScheme = 'light';
@@ -26,10 +27,10 @@
                 document.querySelector('html').classList.add('dark');
                 document.querySelector('html').style.colorScheme = 'dark';
             }
-        </script>
+        </script> --}}
     </head>
     <body
-        class="font-inter antialiased bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400"
+        class="font-inter antialiased bg-black text-slate-400 scroll-smooth focus:scroll-auto"
         :class="{ 'sidebar-expanded': sidebarExpanded }"
         x-data="{ sidebarOpen: false, sidebarExpanded: localStorage.getItem('sidebar-expanded') == 'true' }"
         x-init="$watch('sidebarExpanded', value => localStorage.setItem('sidebar-expanded', value))"    
@@ -44,23 +45,29 @@
         </script>
 
         <!-- Page wrapper -->
-        <div class="flex h-[100dvh] overflow-hidden">
-
+        <div class="flex h-screen overflow-hidden">
             <x-app.sidebar />
-
             <!-- Content area -->
+
             <div class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden @if($attributes['background']){{ $attributes['background'] }}@endif" x-ref="contentarea">
 
                 <x-app.header />
-
-                <main class="grow">
+                <main>
+                    <div class="z-30 fixed top-20 right-10">
+                        <button class="bg-white hover:bg-slate-800 text-black font-bold py-2 px-4 rounded-full shadow-lg">
+                        Blog
+                        </button>
+                    </div>
                     {{ $slot }}
                 </main>
 
+                <x-app.footer/>
             </div>
 
         </div>
 
         @livewireScripts
+
+        @stack('scripts')
     </body>
 </html>

@@ -22,15 +22,9 @@ return new class extends Migration
             $table->enum('status', [
                 'pengurus', 'anggota', 'relawan', 'system', 'saksi'
             ])->default('anggota');
-            $table->integer('tingkat')->nullable();
             $table->string('ftitle')->nullable();
             $table->string('btitle')->nullable();
-            $table->string('nik')->nullable();
-            $table->string('kk')->nullable();
-            $table->string('kta')->nullable();
-            $table->integer('wilayahkta_id')->nullable();
             $table->integer('number')->nullable();
-            $table->string('kta_lama')->nullable();
             $table->string('place_birth')->nullable();
             $table->string('date_birth')->nullable();
             $table->string('phone')->nullable();
@@ -51,10 +45,6 @@ return new class extends Migration
             $table->integer('regency_id')->nullable();
             $table->integer('district_id')->nullable();
             $table->bigInteger('village_id')->nullable();
-            // $table->string('dati1_id')->nullable();
-            // $table->string('dati2_id')->nullable();
-            // $table->string('dati3_id')->nullable();
-            // $table->string('dati4_id')->nullable();
             $table->integer('rw')->nullable();
             $table->integer('rt')->nullable();
             $table->integer('tps')->nullable();

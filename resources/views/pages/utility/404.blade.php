@@ -1,18 +1,13 @@
-<x-app-layout background="bg-white dark:bg-slate-900">
-    <div class="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
-
-        <div class="max-w-2xl m-auto mt-16">
-
-            <div class="text-center px-4">
-                <div class="inline-flex mb-8">
-                    <img class="dark:hidden" src="{{ asset('images/404-illustration.svg') }}" width="176" height="176" alt="404 illustration" />
-                    <img class="hidden dark:block" src="{{ asset('images/404-illustration-dark.svg') }}" width="176" height="176" alt="404 illustration dark" />                        
-                </div>
-                <div class="mb-6">Hmm...this page doesn't exist. Try searching for something else!</div>
-                <a href="{{ route('dashboard') }}" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">Back To Dashboard</a>
+<x-app-layout background="bg-black">
+    <div class="grid min-h-full place-items-center bg-black px-6 py-24 sm:py-32 lg:px-8">
+        <div class="text-center">
+            <p class="text-base font-semibold text-indigo-600">404</p>
+            <h1 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">Page not found</h1>
+            <p class="mt-6 text-base leading-7 text-white">Sorry, we couldn’t find the page you’re looking for.</p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back home</a>
+                <a href="#" class="text-sm font-semibold text-white">Contact support <span aria-hidden="true">&rarr;</span></a>
             </div>
-
         </div>
-
     </div>
 </x-app-layout>

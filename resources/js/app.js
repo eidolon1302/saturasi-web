@@ -6,6 +6,19 @@ import { Chart } from 'chart.js';
 // Import flatpickr
 import flatpickr from 'flatpickr';
 
+// import GSAP
+import { gsap } from "gsap";
+    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Observer } from "gsap/Observer";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { Draggable } from "gsap/Draggable";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { PixiPlugin } from "gsap/PixiPlugin";
+
+
+gsap.registerPlugin(ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,PixiPlugin);
+
 // import component from './components/component';
 import dashboardCard01 from './components/dashboard-card-01';
 import dashboardCard02 from './components/dashboard-card-02';
