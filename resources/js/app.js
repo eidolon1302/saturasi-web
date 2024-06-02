@@ -19,33 +19,6 @@ import { PixiPlugin } from "gsap/PixiPlugin";
 
 gsap.registerPlugin(ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,PixiPlugin);
 
-// import component from './components/component';
-import dashboardCard01 from './components/dashboard-card-01';
-import dashboardCard02 from './components/dashboard-card-02';
-import dashboardCard03 from './components/dashboard-card-03';
-import dashboardCard04 from './components/dashboard-card-04';
-import dashboardCard05 from './components/dashboard-card-05';
-import dashboardCard06 from './components/dashboard-card-06';
-import dashboardCard08 from './components/dashboard-card-08';
-import dashboardCard09 from './components/dashboard-card-09';
-import analyticsCard01 from './components/analytics-card-01';
-import analyticsCard02 from './components/analytics-card-02';
-import analyticsCard03 from './components/analytics-card-03';
-import analyticsCard04 from './components/analytics-card-04';
-import analyticsCard08 from './components/analytics-card-08';
-import analyticsCard09 from './components/analytics-card-09';
-import analyticsCard10 from './components/analytics-card-10';
-import fintechCard01 from './components/fintech-card-01';
-import fintechCard03 from './components/fintech-card-03';
-import fintechCard04 from './components/fintech-card-04';
-import fintechCard07 from './components/fintech-card-07';
-import fintechCard08 from './components/fintech-card-08';
-import fintechCard09 from './components/fintech-card-09';
-import fintechCard10 from './components/fintech-card-10';
-import fintechCard11 from './components/fintech-card-11';
-import fintechCard12 from './components/fintech-card-12';
-import fintechCard13 from './components/fintech-card-13';
-import fintechCard14 from './components/fintech-card-14';
 
 // Define Chart.js default settings
 /* eslint-disable prefer-destructuring */

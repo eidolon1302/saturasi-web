@@ -41,10 +41,10 @@
                     </div>
                     <div
                         class="grid mt-4 grid-cols-4 md:grid-cols-8 lg:grid-cols-4 gap-y-4 gap-4 justify-center w-full">
-                        <a href="#_"
+                        <a href="ricofitranda@gmail.com "
                             class="flex items-center justify-center aspect-square shadow-thick hover:bg-primary ring-1  dark:ring-white/10 ring-primary/5 bg-tertiary rounded-lg hover:ring-white/20 duration-300 group transition-all h-12 w-12">
                             <svg xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary text-white group-hover text-primary:text-white/50"
+                                class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover text-primary:dark:text-white/50"
                                 viewBox="0 0 24 24" stroke-width="0.8" stroke="currentColor" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -115,7 +115,7 @@
                                 <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
                             </svg>
                         </a>
-                        <a href="#_"
+                        <a href="https://www.linkedin.com/in/ricofitranda"
                             class="flex items-center justify-center aspect-square shadow-thick hover:bg-primary ring-1  dark:ring-white/10 ring-primary/5 bg-tertiary rounded-lg hover:ring-white/20 duration-300 group transition-all h-12 w-12">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover text-primary:dark:text-white/50 icon-tabler-brand-linkedin"
@@ -130,7 +130,7 @@
                                 <path d="M12 16l0 -5"></path>
                                 <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
                             </svg>
-                        </a><a href="#_"
+                        </a><a href="https://github.com/eidolon1302"
                             class="flex items-center justify-center aspect-square shadow-thick hover:bg-primary ring-1  dark:ring-white/10 ring-primary/5 bg-tertiary rounded-lg hover:ring-white/20 duration-300 group transition-all h-12 w-12">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover text-primary:dark:text-white/50 icon-tabler-brand-facebook"
@@ -172,15 +172,14 @@
                     class="ring-1 ring-primary/5 flex flex-col justify-between items-center rounded-3xl shadow-thick p-8 bg-black overflow-hidden text-center lg:text-left">
                     <div>
                         <p class="text-xl text-white lg:text-7xl tracking-tight">
-                            Grab my résumé!
+                            Grab my resume!
                         </p>
                         <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400 md:max-w-xs lg:max-w-none">
-                            Unlock the doors to explore the rich tapestry of my professional
-                            journey and accomplishments.
+                            Unlock the gateway to delve into the intricate weave of my journey and achievements with my resume.
                         </p>
                     </div>
                     <div class="w-full mt-8 md:max-w-xs lg:max-w-none">
-                        <button type="button"
+                        <button wire:click="download"
                             class="text-sm py-2 w-full px-4 h-12 font-semibold focus:ring-2 rounded-lg bg-primary   text-white flex duration-200 focus:ring-offset-2 focus:ring-inline-flex items-center justify-between ring-1  dark:ring-white/10 ring-primary/5 hover:ring-white/20 duration-300">
                             Download my CV
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -286,12 +285,10 @@
                 <div
                     class="lg:col-span-2 xl:col-span-1 h-full flex flex-col justify-between lg:row-span-2 ring-1 dark:ring-white/10 ring-primary/5 bg-secondary shadow-xl shadow-thick rounded-3xl p-8">
                     <p class="text-xl tracking-tight font-medium text-white md:text-3xl">
-                        As a digital designer, my expertise lies in crafting distinctive
-                        visual identities for digital products.
-                        <br />
-                        <br />
-                        I hold the belief that an engaging design begins with shared values,
-                        transparent communication, and a genuine respect for the audience.
+                        Casting the seeds of innovation, I established this website as a canvas for our team's portfolio, a digital testament to the dedication, ingenuity, and collaborative spirit that define our journey.
+                        <br/>
+                        <br/>
+                        My hope is that this site will inspire visitors and open up new opportunities for collaboration and growth. We want everyone to see the quality and passion we put into every project.
                     </p>
                     <p class="text-primary dark:text-white mt-4">Rico Fitranda</p>
                 </div>
