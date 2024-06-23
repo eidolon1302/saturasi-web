@@ -54,7 +54,7 @@
                                 <path d="M3 7l9 6l9 -6"></path>
                             </svg>
                         </a>
-                        <a href="#_"
+                        <a href="https://github.com/eidolon1302"
                             class="flex items-center justify-center aspect-square shadow-thick hover:bg-primary ring-1  dark:ring-white/10 ring-primary/5 bg-tertiary rounded-lg hover:ring-white/20 duration-300 group transition-all h-12 w-12">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-brand-github h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover text-primary:dark:text-white/50"
@@ -261,21 +261,20 @@
                     <div class="md:grid md:grid-cols-2 gap-6 lg:grid-cols-1">
                         <div class="mt-4">
                             <p class="text-sm text-pink-500 dark:text-pink-400">
-                                "Big fan of your themes. They're well-organized, look clean, and
-                                are fast."
+                                "Big fan of you. They're well-organized, look clean, and
+                                are fast respon."
                             </p>
                             <p class="text-xs mt-2 text-zinc-400">
-                                <span class="block text-xs">Kevin Focke</span>
+                                <span class="block text-xs">Cristianoo siuu</span>
                                 <span class="block text-xs"> Developer</span>
                             </p>
                         </div>
                         <div class="mt-4">
                             <p class="text-sm text-orange-300">
-                                "Amazing resource using @astrodotbuild and @tailwindcss! I got it
-                                a week ago and have found the contents really useful. 5/5
+                                "Amazing work for u so far. cant wait to see yout next project and next update of yours web.
                             </p>
                             <p class="text-xs mt-2 text-zinc-400">
-                                <span class="block text-xs">Alonso</span>
+                                <span class="block text-xs">Leonel messii</span>
                                 <span class="block text-xs"> Entrepreneur</span>
                             </p>
                         </div>
