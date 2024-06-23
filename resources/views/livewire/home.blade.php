@@ -205,7 +205,7 @@
                         Saturasi is an online platform focused on sustainability and environmental issues, integrating an art gallery, informative blog, activist space, and circular economy initiatives. Our primary goal is to raise awareness, educate, and empower the community on environmental and sustainability matters. 
                     </p>
                 </a>
-                <a href="https://lexingtonthemes.com/"
+                <a href="/#"
                     class="lg:row-span-2 ring-1 dark:ring-white/10 ring-primary/5 hover:ring-primary/5 bg-secondary  dark:hover:ring-white/20 overflow-hidden duration-300 shadow-xl dark:shadow-thick rounded-3xl p-8">
                     <div class="-mr-24">
                         <img src="/images/lexington.png"
