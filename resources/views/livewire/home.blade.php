@@ -144,7 +144,7 @@
                     </div>
                 </div>
                 <!-- Saturasi overview -->
-                <a href="https://monomod.studio/"
+                <a href="#_"
                     class="ring-1 lg:row-span-2 flex flex-col justify-between group hover:ring-primary/10 dark:hover:ring-white/20 duration-300 h-full dark:ring-white/10 ring-primary/5 lg:row-start-2 md:grid-cols-2 md:grid lg:gap-0 md:items-center md:gap-12 lg:grid-cols-none lg:col-start-2 lg:col-span-2 rounded-3xl p-8 bg-black  shadow-xl dark:shadow-thick">
                     <div>
                         <p class="ext-xl tracking-tight font-medium text-white md:text-6xl">
