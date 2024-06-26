@@ -25,7 +25,7 @@
 # Important Notices <!-- omit in toc -->
 
 > [!IMPORTANT]\
-> Karena keterbatasan hosting, tampilan dari website ini dapat dilihat pada link berikut ini. (see [#1935](https://github.com/anuraghazra/github-readme-stats/issues/1935)).
+> Karena keterbatasan hostingan, tampilan dari website ini dapat dilihat pada link berikut ini. (see [view](https://drive.google.com/file/d/1HaNdvIBudCApU6LBD9OHLdu0hfIJ-iZV/view?usp=sharing)).
 
 Thanks! :heart:
 
